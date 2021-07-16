@@ -1,0 +1,495 @@
+EESchema Schematic File Version 4
+LIBS:Second_board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Label 4150 2800 2    50   ~ 0
+A0
+Text Label 4150 2900 2    50   ~ 0
+RSV1
+Text Label 4150 3700 2    50   ~ 0
+GND
+Text Label 4150 3800 2    50   ~ 0
+3V3
+Text Label 4150 3900 2    50   ~ 0
+EN
+Text Label 4150 4000 2    50   ~ 0
+RST
+Text Label 4150 4100 2    50   ~ 0
+GND
+Text Label 4150 4200 2    50   ~ 0
+Vin(5V)
+Text Label 5750 4200 0    50   ~ 0
+3V3
+Text Label 5750 4100 0    50   ~ 0
+GND
+Text Label 5750 4000 0    50   ~ 0
+D10(GPIO1|TX0)
+Text Label 5750 3900 0    50   ~ 0
+D9(GPIO3|RX0)
+Text Label 5750 3800 0    50   ~ 0
+D8(GPIO15|TX2|HCS)
+Text Label 5750 3700 0    50   ~ 0
+D7(GPIO13|RX2|MOSI)
+Text Label 5750 3600 0    50   ~ 0
+D6(GPIO12|HMISO)
+Text Label 5750 3500 0    50   ~ 0
+D5(GPIO14|HSCLK)
+Text Label 5750 3400 0    50   ~ 0
+GND
+Text Label 5750 3300 0    50   ~ 0
+3V3
+Text Label 5750 3200 0    50   ~ 0
+D4(GPIO2|TX1)
+Text Label 5750 3100 0    50   ~ 0
+D3(GPIO0)
+Text Label 5750 3000 0    50   ~ 0
+D2(GPIO4|SDA)
+Text Label 5750 2900 0    50   ~ 0
+D1(GPIO5|SCL)
+Text Label 5750 2800 0    50   ~ 0
+D0(GPIO16)
+$Comp
+L Connector:Conn_01x06_Female J7
+U 1 1 60EDA7B6
+P 7900 1150
+F 0 "J7" H 7794 625 50  0000 C CNN
+F 1 "SD Card Module" H 7550 1450 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 7900 1150 50  0001 C CNN
+F 3 "~" H 7900 1150 50  0001 C CNN
+	1    7900 1150
+	-1   0    0    1   
+$EndComp
+Text Label 8100 1350 0    50   ~ 0
+GND
+Text Label 8100 950  0    50   ~ 0
+D5(GPIO14|HSCLK)
+Text Label 8100 1150 0    50   ~ 0
+D6(GPIO12|HMISO)
+Text Label 8100 1050 0    50   ~ 0
+D7(GPIO13|RX2|MOSI)
+Text Label 8100 1250 0    50   ~ 0
+Vin(5V)
+Text Label 8100 850  0    50   ~ 0
+D8(GPIO15|TX2|HCS)
+$Comp
+L Connector:Conn_01x04_Female J8
+U 1 1 60EDB3C8
+P 7350 2550
+F 0 "J8" H 7244 2125 50  0000 C CNN
+F 1 "DHT22" V 7450 2500 50  0000 C CNN
+F 2 "Connector_JST:JST_EH_B04B-EH-A_1x04_P2.50mm_Vertical" H 7350 2550 50  0001 C CNN
+F 3 "~" H 7350 2550 50  0001 C CNN
+	1    7350 2550
+	0    1    1    0   
+$EndComp
+Text Label 7450 2350 0    50   ~ 0
+Vin(5V)
+$Comp
+L Device:R R3
+U 1 1 60EDB515
+P 7500 2150
+F 0 "R3" V 7293 2150 50  0000 C CNN
+F 1 "10k" V 7384 2150 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 7430 2150 50  0001 C CNN
+F 3 "~" H 7500 2150 50  0001 C CNN
+	1    7500 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7350 2150 7350 2350
+Text Label 7650 2150 0    50   ~ 0
+Vin(5V)
+NoConn ~ 7250 2350
+$Comp
+L Connector:Conn_01x12_Female J3
+U 1 1 60EDC027
+P 1950 1550
+F 0 "J3" V 2022 1480 50  0000 C CNN
+F 1 "Tiny_RTC" V 2113 1480 50  0000 C CNN
+F 2 "tiny_rtc:Tiny_RTC_DS1307" H 1950 1550 50  0001 C CNN
+F 3 "~" H 1950 1550 50  0001 C CNN
+	1    1950 1550
+	0    1    1    0   
+$EndComp
+Text Label 1350 1350 1    50   ~ 0
+DS1
+Text Label 1750 1350 1    50   ~ 0
+GND
+Text Label 2450 1350 1    50   ~ 0
+BAT
+Text Label 2350 1350 1    50   ~ 0
+GND
+Text Label 2150 1350 1    50   ~ 0
+SDA2
+Text Label 2050 1350 1    50   ~ 0
+SCL2
+Text Label 1950 1350 1    50   ~ 0
+DS2
+Text Label 1850 1350 1    50   ~ 0
+SQ
+Text Label 1550 1350 1    50   ~ 0
+D2(GPIO4|SDA)
+Text Label 1450 1350 1    50   ~ 0
+D1(GPIO5|SCL)
+$Comp
+L Connector:Conn_01x03_Female J1
+U 1 1 60EDC657
+P 1950 4000
+F 0 "J1" V 1797 4148 50  0000 L CNN
+F 1 "Wind Vane" V 2150 3850 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B03B-EH-A_1x03_P2.50mm_Vertical" H 1950 4000 50  0001 C CNN
+F 3 "~" H 1950 4000 50  0001 C CNN
+	1    1950 4000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 60EDC76B
+P 2300 3950
+F 0 "#PWR0101" H 2300 3700 50  0001 C CNN
+F 1 "GND" H 2305 3777 50  0000 C CNN
+F 2 "" H 2300 3950 50  0001 C CNN
+F 3 "" H 2300 3950 50  0001 C CNN
+	1    2300 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3800 2050 3700
+Wire Wire Line
+	2050 3700 2300 3700
+Wire Wire Line
+	2300 3700 2300 3950
+NoConn ~ 1850 3800
+$Comp
+L Device:R R1
+U 1 1 60EDC7D3
+P 2100 3550
+F 0 "R1" V 1893 3550 50  0000 C CNN
+F 1 "10k" V 1984 3550 50  0000 C CNN
+F 2 "modFiles:Resistor_small" V 2030 3550 50  0001 C CNN
+F 3 "~" H 2100 3550 50  0001 C CNN
+	1    2100 3550
+	0    1    1    0   
+$EndComp
+Text Label 2250 3550 0    50   ~ 0
+Vin(5V)
+Wire Wire Line
+	1950 3550 1950 3800
+Text Label 1950 3550 2    50   ~ 0
+A0
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 60EDCA9A
+P 2000 4950
+F 0 "J2" V 1847 5098 50  0000 L CNN
+F 1 "Anemometer" V 2200 4800 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B03B-EH-A_1x03_P2.50mm_Vertical" H 2000 4950 50  0001 C CNN
+F 3 "~" H 2000 4950 50  0001 C CNN
+	1    2000 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 60EDCAF2
+P 2350 4900
+F 0 "#PWR0102" H 2350 4650 50  0001 C CNN
+F 1 "GND" H 2355 4727 50  0000 C CNN
+F 2 "" H 2350 4900 50  0001 C CNN
+F 3 "" H 2350 4900 50  0001 C CNN
+	1    2350 4900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 4750 2100 4650
+Wire Wire Line
+	2100 4650 2350 4650
+Wire Wire Line
+	2350 4650 2350 4900
+Text Label 7150 2200 2    50   ~ 0
+D0(GPIO16)
+Wire Wire Line
+	7150 2200 7150 2350
+NoConn ~ 1900 4750
+$Comp
+L Connector:Conn_01x03_Female J4
+U 1 1 60EDD0CA
+P 2050 2750
+F 0 "J4" V 1897 2898 50  0000 L CNN
+F 1 "Rain Gauge" V 2250 2600 50  0000 L CNN
+F 2 "Connector_JST:JST_EH_B03B-EH-A_1x03_P2.50mm_Vertical" H 2050 2750 50  0001 C CNN
+F 3 "~" H 2050 2750 50  0001 C CNN
+	1    2050 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60EDD13D
+P 2350 2700
+F 0 "#PWR0103" H 2350 2450 50  0001 C CNN
+F 1 "GND" H 2355 2527 50  0000 C CNN
+F 2 "" H 2350 2700 50  0001 C CNN
+F 3 "" H 2350 2700 50  0001 C CNN
+	1    2350 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 2550 2150 2500
+Wire Wire Line
+	2150 2500 2350 2500
+Wire Wire Line
+	2350 2500 2350 2700
+NoConn ~ 1950 2550
+Text Label 2000 4750 1    50   ~ 0
+D3(GPIO0)
+Text Label 2050 2550 1    50   ~ 0
+D4(GPIO2|TX1)
+$Comp
+L Prashant_library:Buck U1
+U 1 1 60EDE859
+P 9650 3450
+F 0 "U1" H 9950 3897 60  0000 C CNN
+F 1 "Buck" H 9950 3791 60  0000 C CNN
+F 2 "modFiles:Buck_Regulator" H 10074 3744 60  0001 C CNN
+F 3 "" H 10074 3744 60  0001 C CNN
+	1    9650 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Female J9
+U 1 1 60EDE94E
+P 8750 3750
+F 0 "J9" V 8597 3798 50  0000 L CNN
+F 1 "Power Supply" V 8850 3350 50  0000 L CNN
+F 2 "modFiles:Solar_Connector" H 8750 3750 50  0001 C CNN
+F 3 "~" H 8750 3750 50  0001 C CNN
+	1    8750 3750
+	0    1    1    0   
+$EndComp
+Text Label 8650 3550 1    50   ~ 0
+12V
+Text Label 8750 3550 1    50   ~ 0
+GND
+$Comp
+L Device:Fuse F1
+U 1 1 60EDEAF4
+P 9250 3250
+F 0 "F1" V 9053 3250 50  0000 C CNN
+F 1 "Fuse" V 9144 3250 50  0000 C CNN
+F 2 "modFiles:Fuse_Holder" V 9180 3250 50  0001 C CNN
+F 3 "~" H 9250 3250 50  0001 C CNN
+	1    9250 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 60EDEFC0
+P 8800 3250
+F 0 "D2" H 8800 3034 50  0000 C CNN
+F 1 "D" H 8800 3125 50  0000 C CNN
+F 2 "modFiles:Diode_Small" H 8800 3250 50  0001 C CNN
+F 3 "~" H 8800 3250 50  0001 C CNN
+	1    8800 3250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8950 3250 9050 3250
+Wire Wire Line
+	9400 3250 9550 3250
+$Comp
+L power:GND #PWR0104
+U 1 1 60EDF97B
+P 9500 3450
+F 0 "#PWR0104" H 9500 3200 50  0001 C CNN
+F 1 "GND" H 9505 3277 50  0000 C CNN
+F 2 "" H 9500 3450 50  0001 C CNN
+F 3 "" H 9500 3450 50  0001 C CNN
+	1    9500 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 3450 9500 3350
+Wire Wire Line
+	9500 3350 9550 3350
+Wire Wire Line
+	10350 3350 10350 3450
+Wire Wire Line
+	10350 3450 9500 3450
+Connection ~ 9500 3450
+Text Label 10350 3250 0    50   ~ 0
+Vin(5V)
+$Comp
+L Device:LED D3
+U 1 1 60EE0029
+P 9050 3750
+F 0 "D3" V 9088 3633 50  0000 R CNN
+F 1 "LED" V 8997 3633 50  0000 R CNN
+F 2 "modFiles:LED_D3.0mm" H 9050 3750 50  0001 C CNN
+F 3 "~" H 9050 3750 50  0001 C CNN
+	1    9050 3750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 60EE0102
+P 9050 3400
+F 0 "R4" H 8980 3354 50  0000 R CNN
+F 1 "R" H 8980 3445 50  0000 R CNN
+F 2 "modFiles:Resistor_small" V 8980 3400 50  0001 C CNN
+F 3 "~" H 9050 3400 50  0001 C CNN
+	1    9050 3400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8650 3250 8650 3550
+Connection ~ 9050 3250
+Wire Wire Line
+	9050 3250 9100 3250
+$Comp
+L power:GND #PWR0105
+U 1 1 60EE09DC
+P 9050 4000
+F 0 "#PWR0105" H 9050 3750 50  0001 C CNN
+F 1 "GND" H 9055 3827 50  0000 C CNN
+F 2 "" H 9050 4000 50  0001 C CNN
+F 3 "" H 9050 4000 50  0001 C CNN
+	1    9050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 3900 9050 4000
+Wire Wire Line
+	9050 3600 9050 3550
+$Comp
+L Device:R R5
+U 1 1 60EE10AF
+P 9400 3400
+F 0 "R5" H 9330 3354 50  0000 R CNN
+F 1 "R" H 9330 3445 50  0000 R CNN
+F 2 "modFiles:Resistor_small" V 9330 3400 50  0001 C CNN
+F 3 "~" H 9400 3400 50  0001 C CNN
+	1    9400 3400
+	-1   0    0    1   
+$EndComp
+Connection ~ 9400 3250
+$Comp
+L Device:LED D4
+U 1 1 60EE10FB
+P 9400 3750
+F 0 "D4" V 9438 3633 50  0000 R CNN
+F 1 "LED" V 9347 3633 50  0000 R CNN
+F 2 "modFiles:LED_D3.0mm" H 9400 3750 50  0001 C CNN
+F 3 "~" H 9400 3750 50  0001 C CNN
+	1    9400 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9400 3600 9400 3550
+$Comp
+L power:GND #PWR0106
+U 1 1 60EE14F2
+P 9400 4000
+F 0 "#PWR0106" H 9400 3750 50  0001 C CNN
+F 1 "GND" H 9405 3827 50  0000 C CNN
+F 2 "" H 9400 4000 50  0001 C CNN
+F 3 "" H 9400 4000 50  0001 C CNN
+	1    9400 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9400 4000 9400 3900
+$Comp
+L Device:R R2
+U 1 1 60EE1D08
+P 3350 3250
+F 0 "R2" H 3280 3204 50  0000 R CNN
+F 1 "R" H 3280 3295 50  0000 R CNN
+F 2 "modFiles:Resistor_small" V 3280 3250 50  0001 C CNN
+F 3 "~" H 3350 3250 50  0001 C CNN
+	1    3350 3250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 60EE1D70
+P 3350 3650
+F 0 "D1" V 3388 3533 50  0000 R CNN
+F 1 "LED" V 3297 3533 50  0000 R CNN
+F 2 "modFiles:LED_D3.0mm" H 3350 3650 50  0001 C CNN
+F 3 "~" H 3350 3650 50  0001 C CNN
+	1    3350 3650
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 60EE24CE
+P 3350 3950
+F 0 "#PWR0107" H 3350 3700 50  0001 C CNN
+F 1 "GND" H 3355 3777 50  0000 C CNN
+F 2 "" H 3350 3950 50  0001 C CNN
+F 3 "" H 3350 3950 50  0001 C CNN
+	1    3350 3950
+	1    0    0    -1  
+$EndComp
+Text Label 2250 1350 1    50   ~ 0
+Vin(5V)
+$Comp
+L Connector:Conn_01x02_Female J6
+U 1 1 60F079DD
+P 5400 2000
+F 0 "J6" V 5247 2048 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 5338 2048 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5400 2000 50  0001 C CNN
+F 3 "~" H 5400 2000 50  0001 C CNN
+	1    5400 2000
+	0    1    1    0   
+$EndComp
+Text Label 5400 1800 1    50   ~ 0
+D9(GPIO3|RX0)
+Text Label 5300 1800 1    50   ~ 0
+D10(GPIO1|TX0)
+$Comp
+L ESP8266:NodeMCU1.0(ESP-12E) U2
+U 1 1 60F07E1F
+P 4950 3500
+F 0 "U2" H 4950 4587 60  0000 C CNN
+F 1 "NodeMCU1.0(ESP-12E)" H 4950 4481 60  0000 C CNN
+F 2 "ESP8266:ESP12F-Devkit-V3" H 4350 2650 60  0001 C CNN
+F 3 "" H 4350 2650 60  0000 C CNN
+	1    4950 3500
+	1    0    0    -1  
+$EndComp
+Text Label 4150 3000 2    50   ~ 0
+RSV2
+Text Label 4150 3100 2    50   ~ 0
+SD3(GPIO10)
+Text Label 4150 3200 2    50   ~ 0
+SD2(GPIO9)
+Text Label 4150 3300 2    50   ~ 0
+SD1(MOSI)
+Text Label 4150 3400 2    50   ~ 0
+CMD(CS)
+Text Label 4150 3500 2    50   ~ 0
+SD0(MISO)
+Text Label 4150 3600 2    50   ~ 0
+CLK(SCLK)
+Wire Wire Line
+	3350 3800 3350 3950
+Wire Wire Line
+	3350 3400 3350 3500
+Wire Wire Line
+	3350 3100 4150 3100
+Text Label 1650 1350 1    50   ~ 0
+Vin(5V)
+$EndSCHEMATC
